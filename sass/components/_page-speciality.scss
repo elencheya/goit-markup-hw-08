@@ -1,0 +1,51 @@
+
+.speciality__list {
+    display: flex;
+}
+
+.speciality__item {
+    width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.speciality__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px; 
+
+    width: 270px;
+    height: 120px;
+
+    background-color: $buttons-background-color;
+}
+
+.speciality__img {
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+.speciality__subtitle {
+    margin-bottom: 8px;
+
+
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $h-bold-text-color;
+}
+
+.speciality__description {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
