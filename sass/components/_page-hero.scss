@@ -1,7 +1,7 @@
-
 .hero {
-    padding: 200px 0px;
 
+    //phone
+    padding: 118px 0px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/portfolio/hero/mainpicture.jpg);
 
     background-repeat: no-repeat;
@@ -10,40 +10,65 @@
     margin-right: auto;
 
 
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 400px;
 
 
     background-color: $hero-background-color;
     text-align: center;
+
+    //tablet
+    @media screen and (min-width:767px) {
+        max-width: 768px;
+    }
+
+    //descdrop
+    @media screen and (min-width:1199px) {
+        padding: 200px 0px;
+        max-width: 1600px;
+        height: 600px;
+    }
+
+
 }
 
 
 .hero__title {
+    //phone and tablet
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 30px;
     margin-left: auto;
 
 
-    width: 696px;
-
+    max-width: 360px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-
-
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: $white-color;
+
+
+    //desckdrop
+    @media screen and (min-width:1199px) {
+        max-width: 696px;
+
+        font-size: 44px;
+        line-height: 1.36;
+    }
+
+
 }
 
 .hero__btn {
+
+    //phone and tablet
     display: inline-block;
-    min-width: 216px;
-    padding: 10px 32px;
+    min-width: 200px;
+    padding: 10px 24px;
 
 
     font-family: inherit;
@@ -62,4 +87,11 @@
     border-radius: 4px;
 
     cursor: pointer;
+
+    //descdrop
+    @media screen and(min-width:1199px) {
+        min-width: 216px;
+        padding: 10px 32px;
+
+    }
 }
