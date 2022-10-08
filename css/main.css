@@ -1288,10 +1288,27 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 8px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
   row-gap: 15px;
-  margin-top: 60px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .projects__buttons {
+    max-width: 326px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects__buttons {
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .projects__buttons {
@@ -1305,8 +1322,10 @@ img {
   }
 }
 
-.projects__button-item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 767px) {
+  .projects__button-item:not(:last-child) {
+    row-gap: 8px;
+  }
 }
 
 .button {
