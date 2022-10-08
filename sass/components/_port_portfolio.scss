@@ -7,6 +7,7 @@
         flex-wrap: wrap;
         column-gap: 8px;
         row-gap: 15px;
+        width: 100%;
     }
         @media screen and (min-width:480px){
             display: flex;
@@ -17,6 +18,10 @@
 }
 
 .projects__portfolio-item{
+    //phone
+    
+    width: 100%;
+
     //tablet
     @media screen and(min-width:767px) {
         flex-basis: calc((100% - (30px * (2 - 1))) / 2)

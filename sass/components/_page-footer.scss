@@ -114,8 +114,13 @@
     }
 
 .follow__list {
-    display: flex;
     column-gap: 10px;
+
+    //phone
+    @media screen and(max-width:768px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 

@@ -1088,12 +1088,19 @@ img {
 }
 
 .follow__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .follow__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .follow__link {
@@ -1366,6 +1373,7 @@ img {
        -moz-column-gap: 8px;
             column-gap: 8px;
     row-gap: 15px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1379,6 +1387,9 @@ img {
   }
 }
 
+.projects__portfolio-item {
+  width: 100%;
+}
 @media screen and (min-width: 767px) {
   .projects__portfolio-item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
