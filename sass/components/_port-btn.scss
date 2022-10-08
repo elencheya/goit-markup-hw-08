@@ -1,8 +1,23 @@
 
 .projects__buttons {
-    margin-bottom: 50px;
-     display: flex;
-    justify-content: center;
+    //phone 
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 15px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+
+
+    //desctop
+    @media screen and(min-width:1200px){
+        margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+    }
+    
 }
 
 .projects__button-item:not(:last-child) {

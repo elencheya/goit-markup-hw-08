@@ -25,16 +25,13 @@
 
     //tablet
     @media screen and (min-width:767px) {
-        max-width: 354px;
+        flex-basis: calc((100% - (30px * (2 - 1))) / 2);
     }
 
     //desctop
     @media screen and (min-width:1199px) {
-        max-width: 270px;
+        flex-basis: calc((100% - (30px * (4 - 1))) / 4);
 
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
     }
 }
 

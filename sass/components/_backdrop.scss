@@ -27,8 +27,8 @@
         padding: 40px;
     
     
-        width: 528px;
-        min-height: 581px;
+        width: 450px;
+        min-height: 609px;
     
         background-color: $white-color;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -36,6 +36,13 @@
     
         transition: background-color $cubic-mooving-speed-color,
         box-shadow $cubic-mooving-speed-color;
+
+
+
+        @media screen and (min-width:1200px) {
+            width: 528px;
+            min-height: 581px;
+        }
     }
 
 .modal__btn {
@@ -63,11 +70,16 @@
         margin-bottom: 12px;
     
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.5;
     
         text-align: center;
     
         color: #212121;
+
+    @media screen and(min-width:1200px) {
+        line-height: 1.15;
+        
+    }
 }
 
 .registration__form-list {
@@ -207,7 +219,18 @@
 
 
 .registration__form-desc {
-    line-height: 1.71;;
+    //phone and tablet
+
+    @media screen and(max-width:1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    //desctop
+
+         @media screen and(min-width:1200px) {
+    line-height: 1.71;
+}
 }
 
 .registration__form-link {

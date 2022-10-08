@@ -5,16 +5,34 @@
     }
 
 .footer-contact__container {
+
+    //phone
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+
+
+    gap: 60px;
+
+//tablet
+    //destop
 }
 
 .footer-contact__address-container {
+    //phone
+    text-align: center;
+
+
+    //desctop
+
+    @media screen and (min-width:1199px) {
     margin-right: 70px;
+    }
+   
 }
 
 .footer-contact__logo {
-    display: flex;
+    display:inline-block;
     
         margin-bottom: 20px;
     
@@ -27,12 +45,18 @@
         letter-spacing: 0.03em;
     
         color: $logo-footer-second-part-text-color;
+    
+    
+        //desctop
+        @media screen and (min-width:1199px) {
+            display: flex;
+    
+        }
     }
-
-.footer-contact__logo-first-part {
-            color: $logo-first-part-text-color;
-}
-
+    
+    .footer-contact__logo-first-part {
+        color: $logo-first-part-text-color;
+    }
 .footer-contact__address {
     font-style: normal;
     width: 231px;
@@ -74,7 +98,9 @@
 
 
 .follow__name {
-    display: flex;
+    display: block;
+    text-align: center;
+
         margin-bottom: 20px;
     
     
@@ -126,8 +152,19 @@
 }
 
 .footer__registration-block {
+    //phone
+
     display: flex;
-    margin-left: 93px;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    //desctop
+    @media screen and(min-width:1200px){
+        margin-left: 93px;
+    }
+    
 }
 
 .footer__registration-form-text {

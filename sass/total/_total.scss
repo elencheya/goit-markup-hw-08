@@ -37,20 +37,29 @@ ul {
 
 //*======ЗАДАЄМО КОНТЕЙНЕРУ ШИРИНУ====
 .container {
+width: 100%;
+padding: 0px 15px;
+margin: 0 auto;
 
-    //phone
-    max-width: 480px;
-    padding: 0px 15px;
-    margin: 0px auto;
+
+@media screen and (max-width: 319px) {
+        width: 320px;
+    }
+    
+//phone
+@media screen and (min-width:480px) {
+    width: 480px;
+}
+
 
     //tablet
     @media screen and (min-width:768px) {
-            max-width: 768px;
+            width: 768px;
         }
 
     //desktop
     @media screen and (min-width:1200px) {
-            max-width: 1200px;
+            width: 1200px;
         }
 
 }
@@ -65,6 +74,14 @@ ul {
     text-decoration: none;
 }
 
+//*========ДАНІ ПО КАРТИНКАМ для респонсивних зображень
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+margin: 0 auto;
+}
 
 //*=====УТИЛІТНИЙ КЛАС ДЛЯ ВСІХ СЕКЦІЙ -ОДНАКОВІ ВІДСТУПИ====
 .section {
