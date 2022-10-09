@@ -5,17 +5,20 @@
     }
 
 .footer-contact__container {
-
-    //phone
     display: flex;
-    flex-direction: column;
+
     align-items: center;
 
 
     gap: 60px;
 
-//tablet
-    //destop
+
+    //phone
+    @media screen and(max-width:767px) {
+        flex-direction: column;
+    }
+
+    //tablet and destop
 }
 
 .footer-contact__address-container {
@@ -115,12 +118,9 @@
 
 .follow__list {
     column-gap: 10px;
+    display: flex;
+    justify-content: center;
 
-    //phone
-    @media screen and(max-width:768px) {
-        display: flex;
-        justify-content: center;
-    }
 }
 
 
@@ -180,6 +180,8 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
+
+        text-align: center;
     
         text-transform: uppercase;
     
@@ -188,9 +190,12 @@
 
 .footer__block {
     display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
     align-items: center;
     
-    gap: 10px;
+    gap: 20px;
 }
 
 .footer__label {
