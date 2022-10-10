@@ -29,7 +29,7 @@
     }
 
 
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width:480px) {
             .hero {
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                     url(../images/portfolio/tablet/img_headerm-@1x-min.png);
@@ -64,12 +64,11 @@
             }    
 }
 
-    //descdrop
+    //desctop
     @media screen and (min-width:1199px) {
         padding: 200px 0px;
         max-width: 1600px;
         height: 600px;
-
 }
 }
 
