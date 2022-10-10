@@ -1,7 +1,7 @@
 .speciality__list {
 
     //tablet
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
@@ -24,13 +24,15 @@
     }
 
     //tablet
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:768px) {
         flex-basis: calc((100% - (30px * (2 - 1))) / 2);
+        margin-bottom: 0px;
     }
 
     //desctop
     @media screen and (min-width:1199px) {
         flex-basis: calc((100% - (30px * (4 - 1))) / 4);
+        margin-bottom: 0px;
 
     }
 }
@@ -50,7 +52,7 @@
     background-color: $buttons-background-color;
 
     //tablet
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:768px) {
         max-width: 354px;
 
     }
@@ -83,7 +85,7 @@
     color: $h-bold-text-color;
 
     //tablet
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:768px) {
         text-align: start;
 
     }

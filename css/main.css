@@ -226,6 +226,7 @@ img {
 @media screen and (min-width: 1199px) {
   .header__address-item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0px;
   }
 }
 
@@ -269,8 +270,8 @@ img {
   height: 400px;
   background-color: #2F303A;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/portfolio/phone/img_headers-@1x-min.png);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/portfolio/phone/img_headers-@1x-min.png);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/portfolio/phone/img_headers-@1x-min.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/portfolio/phone/img_headers-@1x-min.png);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero .hero {
@@ -357,7 +358,7 @@ img {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .speciality__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -383,16 +384,18 @@ img {
 .speciality__item:not(:last-child) {
   margin-bottom: 30px;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .speciality__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1199px) {
   .speciality__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
+    margin-bottom: 0px;
   }
 }
 
@@ -411,7 +414,7 @@ img {
   height: 120px;
   background-color: #F5F4FA;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .speciality__img-container {
     max-width: 354px;
   }
@@ -438,7 +441,7 @@ img {
   text-transform: uppercase;
   color: #212121;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .speciality__subtitle {
     text-align: start;
   }
@@ -537,6 +540,11 @@ img {
 
 .team {
   background-color: #F5F4FA;
+}
+@media screen and (min-width: 767px) {
+  .team {
+    display: none;
+  }
 }
 
 .team__title {
@@ -1050,6 +1058,14 @@ img {
     gap: 60px;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer-contact__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 @media screen and (min-width: 1199px) {
   .footer-contact__container {
     -webkit-box-align: baseline;
@@ -1083,7 +1099,7 @@ img {
     display: inline-block;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer-contact__logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1141,7 +1157,7 @@ img {
     text-align: center;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 768px) {
   .follow__name {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1210,6 +1226,11 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__registration-block {
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {

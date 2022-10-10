@@ -16,6 +16,14 @@
         gap: 60px;
     }
 
+
+    //tablet
+        @media screen and(min-width:768px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+
     //destop
     @media screen and(min-width:1199px) {
         align-items: baseline;
@@ -60,8 +68,8 @@
         display: inline-block;
     }
 
-    //desctop
-    @media screen and (min-width:1199px) {
+    // tablet and desctop
+    @media screen and (min-width:768px) {
         display: flex;
 
     }
@@ -130,7 +138,7 @@
 
     }
 
-    @media screen and (min-width:1199px) {
+    @media screen and (min-width:768px) {
         display: flex;
 
     }
@@ -190,6 +198,12 @@
         flex-direction: column;
         align-items: center;
     }
+
+    //tablet
+        @media screen and(min-width:768px) {
+            margin-top: 60px;
+        }
+
 
     //desctop
     @media screen and(min-width:1200px) {

@@ -174,17 +174,22 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <picture>
-                            <source media="(min-width: 1200px)"
-                                srcset="./images/portfolio/desctop/img_firsts-@1x-min.jpg 1x, ./images/portfolio/desctop/img_firsts-@2x-min.jpg 2x">
-                        
-                            <source media="(min-width: 768px)"
-                                srcset="./images/portfolio/tablet/img_firsts-@1x-min.jpg 1x, ./images/portfolio/tablet/img_firsts-@2x-min.jpg 2x">
-                            
-                            <source media="(min-width: 480px)"
-                                srcset="./images/portfolio/phone/img_firsts-@1x-min.jpg 1x, ./images/portfolio/phone/img_firsts-@2x-min.jpg 2x">
-                                <img src="./images/portfolio/phone/img_firsts-@1x-min.jpg" alt="Перший представник команди чоловічої статі" width="270" height="260">
-                        </picture>
+                    
+                        <img
+                        srcset="
+                        ./images/portfolio/phone/img_firsts-@1x-min.jpg 450w,
+                        ./images/portfolio/phone/img_firsts-@2x-min.jpg 900w,
+                        ./images/portfolio/phone/img_firstm-@1x-min.jpg 354w,
+                        ./images/portfolio/phone/img_firstm-@2x-min.jpg 708w,
+                        ./images/portfolio/phone/img_firstl-@1x-min.jpg 270w,
+                        ./images/portfolio/phone/img_firstl-@2x-min.jpg 540w
+                        " 
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+
+                        src="./images/portfolio/phone/img_firsts-@1x-min.jpg" 
+                        alt="Перший представник команди чоловічої статі"
+                        >
+                    
                         <div class="team__div">
                             <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                             <p class="team__description" lang="en">Product Designer</p>
