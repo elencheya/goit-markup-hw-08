@@ -19,7 +19,7 @@
 
 .projects__portfolio-item{
     //phone
-    
+    display: flex;
     width: 100%;
 
     //tablet
@@ -36,6 +36,7 @@
 
 .projects__portfolio-link {
     text-decoration: none;
+    flex-direction: column;
     
     transition: transform $cubic-mooving-speed-color;
     }
@@ -83,6 +84,7 @@
 
 .border {
     padding: 20px 24px;
+    flex-grow: 1;
     
     
         border-right: 1px solid $border-color-portfolio;
