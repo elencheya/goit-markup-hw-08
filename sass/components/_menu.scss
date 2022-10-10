@@ -38,7 +38,7 @@
     height: 100%;
 
 
-    padding-left: 40px;
+    padding: 40px;
 
     background-color: $main-background-color;
 
@@ -61,8 +61,6 @@
 
 .mobile-menu {
     margin-bottom: auto;
-
-    padding-top: 48px;
 }
 
 .mobile-menu__link {
@@ -105,7 +103,6 @@
 
 .mobile-contacts__mail {
     display: block;
-    margin-bottom: 64px;
 
     font-weight: 500;
     font-size: 24px;
