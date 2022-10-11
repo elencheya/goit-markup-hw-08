@@ -145,13 +145,18 @@
 }
 
 .follow__list {
-    column-gap: 10px;
-    display: flex;
-
-
+    
     //phone
     @media screen and(max-width:767px) {
+        column-gap: 10px;
+        display: flex;
         justify-content: center;
+    }
+
+    //
+    @media screen and(min-width:768px) {
+        column-gap: 10px;
+        display: flex;
     }
 
 
@@ -230,19 +235,28 @@
 }
 
 .footer__block {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
+    
     //phone
     @media screen and(max-width:767px) {
+        display: flex;
+            flex-wrap: wrap;
+            align-items: center;
         justify-content: center;
 
         gap: 20px;
     }
 
+         @media screen and(min-width:767px) {
+            display: block;
+             justify-content: center;
+    
+             gap: 20px;
+         }
+
     //desctop
     @media screen and(min-width:1199px) {
+        display: flex;
+        align-items: center;
         gap: 10px;
 
     }
@@ -284,6 +298,16 @@
 
         color: rgba(255, 255, 255, 0.6);
     }
+
+    @media screen and(min-width:767px) {
+        width: 480px;
+        margin-bottom: 20px;
+    }
+
+         @media screen and(min-width:1199px) {
+             width: 358px;
+             margin-bottom: 0px;
+         }
 }
 
 .footer__submit-btn {
@@ -313,6 +337,12 @@
     border-radius: 4px;
 
     cursor: pointer;
+
+
+    @media screen and(min-width:767px) and(max-width:1199px) {
+        margin-left: auto;
+        margin-right: auto;
+        }
 }
 
 .footer__registration-icon {
