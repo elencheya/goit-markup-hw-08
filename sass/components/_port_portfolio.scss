@@ -24,13 +24,13 @@
 
     //tablet
     @media screen and(min-width:767px) {
-        flex-basis: calc((100% - (30px * (2 - 1))) / 2)
+        flex-basis: calc((100% - (30px * (2 - 1))) / 2);
     }
 
 
     //desctop
         @media screen and(min-width:1199px) {
-            flex-basis: calc((100% - (30px * (3 - 1))) / 3)
+            flex-basis: calc((100% - (30px * (3 - 1))) / 3);
 }
 }
 
