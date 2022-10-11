@@ -3,8 +3,6 @@
     //phone
     padding: 118px 0px;
 
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
     margin-left: auto;
     margin-right: auto;
@@ -17,61 +15,49 @@
     background-color: $hero-background-color;
     text-align: center;
 
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/portfolio/phone/img_headers-@1x-min.png);
-
-@media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../images/portfolio/tablet/img_headers-@2x-min.png);
-        }
-    }
-
-
-        @media screen and (min-width:480px) {
-            .hero {
-                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../images/portfolio/tablet/img_headerm-@1x-min.png);
-            }
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/portfolio/phone/img_s-@1x-min.jpg);
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                .hero {
-                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                        url(../images/portfolio/tablet/img_headerm-@2x-min.png);
-                }
+        // Mobile screen
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/portfolio/phone/img_s-@1x-min.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/portfolio/phone/img_s-@2x-min.jpg);
+        }
+    
+        // Tablet screen
+        @media screen and (min-width: 481px) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/portfolio/tablet/img_m-@1x-min.jpg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/portfolio/tablet/img_m-@2x-min.jpg);
             }
         }
-
-    //tablet
-    @media screen and (min-width:767px) {
-        .hero {
-            max-width: 768px;
-            height: 600px;
+    
+        // Desktop screen
+        @media screen and (min-width: 769px) {
+            
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/portfolio/desctop/img_l-@1x-min.jpg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../images/portfolio/desctop/img_headerl-@1x-min.png);
+                    url(../images/portfolio/desctop/img_l-@2x-min.jpg);
             }
-        
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                .hero {
-                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                        url(../images/portfolio/desctop/img_headerl-@2x-min.png);
-                }
-            }    
+        }
 }
-
-    //desctop
-    @media screen and (min-width:1199px) {
-        padding: 200px 0px;
-        max-width: 1600px;
-        height: 600px;
-}
-}
-
 
 .hero__title {
     //phone and tablet
