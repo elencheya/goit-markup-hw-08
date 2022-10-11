@@ -37,6 +37,7 @@
 .projects__portfolio-link {
     text-decoration: none;
     flex-direction: column;
+    display: flex;
     
     transition: transform $cubic-mooving-speed-color;
     }
@@ -50,6 +51,7 @@
 .projects__portfolio-slide {
     position: relative;
     overflow: hidden;
+    flex-grow: 1;
 }
 
 .mooving-part {

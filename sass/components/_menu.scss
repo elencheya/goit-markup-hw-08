@@ -86,10 +86,13 @@
     margin-bottom: 32px;
 }
 
+.mobile-contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
 .mobile-contacts__phone {
     display: block;
 
-    margin-bottom: 32px;
 
     font-weight: 500;
     font-size: 34px;

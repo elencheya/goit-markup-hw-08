@@ -18,14 +18,15 @@
 
 
     //tablet
-        @media screen and(min-width:768px) {
+        @media screen and(min-width:768px) and(max-width:1199px) {
             flex-wrap: wrap;
+            text-align: center;
             justify-content: space-around;
         }
 
 
     //destop
-    @media screen and(min-width:1199px) {
+    @media screen and(min-width:1200px) {
         align-items: baseline;
 
     }
@@ -70,9 +71,15 @@
 
     // tablet and desctop
     @media screen and (min-width:768px) {
-        display: flex;
+        display: block;
+        
 
     }
+         @media screen and (min-width:1199px) {
+            display: flex;
+            text-align: center;
+    
+         }
 }
 
 .footer-contact__logo-first-part {
