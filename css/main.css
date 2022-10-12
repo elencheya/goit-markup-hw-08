@@ -1261,6 +1261,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__registration-block {
     margin-left: 93px;
+    margin-top: 0px;
   }
 }
 
